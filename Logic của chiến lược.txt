@@ -1,0 +1,191 @@
+I. Logic vào lệnh Mua (Long):
+
+A. Điều kiện tiên quyết: Xác định xu hướng tăng bằng Stochastic
+
+Stochastic Oscillator: (Sử dụng thông số mặc định 14, 3, 3 hoặc điều chỉnh tùy theo khung thời gian và thị trường).
+
+Cách xác định xu hướng tăng:
+
+Stochastic nằm chủ yếu trên vùng 50: Điều này cho thấy phe mua đang kiểm soát thị trường nhiều hơn phe bán. (bỏ phần này đi)
+
+Xác định đỉnh đáy bằng Stochastic: Hình dung khi Stoch về dưới vùng 20 thì mình chưa biết đây là đáy và đáy chỉ xác định khi Stoch có nhịp lên chạm lại mốc 80 thì vùng dưới 20 mới confirm là đáy
+và ngược lại khi Stoch chạm 80 mình sẽ chưa biết đây là đỉnh và mình sẽ confirm được đỉnh khi Stoch về lại 20.
+
+Điều kiện xác định được đỉnh sau cao hơn đỉnh trước hoặc đáy sau thấp hơn đáy trước: Cũng dựa vào Stoch khi tìm được đỉnh or đáy của hiện tại sẽ đối chiếu với đỉnh or đáy của trước đó
+xem có cùng trend hay không.
+VD: Nếu đang trong trend tăng khi Stoch về 20 và lên lại 80 ta confirm được đáy => đối chiếu với đáy trước đó nếu đáy hiện tại cao hơn đáy trước đó thì cùng trend và ngược lại nếu đáy hiện tại thấp hơn đáy trước đó thì 
+gãy market structure đảo chiều xu hướng.
+- Nếu đang trong trend giảm khi Stoch lên 80 và về lại 20 ta confirm được đỉnh => đối chiếu với đỉnh trước đó nếu đỉnh hiện tại thấp hơn đỉnh trước đó thì cùng trend và ngược lại nếu đỉnh hiện tại cao hơn đỉnh trước đó thì
+gãy market structure đảo chiều xu hướng.
+
+=> Khi đã xác định được đỉnh đáy dựa trên Stoch từ đó mình sẽ ra được 1 range giao dịch trong 1 con sóng nối từ đỉnh xuống đáy or đáy lên đỉnh. (Có thể vẽ ra được bộ nến Engulfing hoặc micro DZ tại đỉnh hoặc đáy thì tốt).
+
+B. Tín hiệu vào lệnh:
+
+1. RSI (14):
+
+Chạm mức 30 +1đ
+
+Xuất hiện phân kỳ tăng +1đ
+
+Phân kỳ đỉnh đáy:
+- Giá: Tạo đáy sau thấp hơn đáy trước (Lower Low). Thêm trường hợp giá tạo đáy sau cao hơn đáy trước.
+
+- RSI: Tạo đáy sau cao hơn đáy trước (Higher Low). Thêm trường hợp RSI tạo đáy sau thấp hơn đáy trước.
+
+Phân kỳ nhỏ trong sóng: Tương tự như phân kỳ đỉnh đáy nhưng mình sẽ xét phân kỳ dựa trên sóng nhỏ của nhịp pullback.
+
+Ý nghĩa: Tương tự như phân kỳ tăng của Stochastic, phân kỳ tăng của RSI cũng cho thấy sự suy yếu của động lượng giảm và khả năng đảo chiều tăng.
+
+2. MACD (12, 26):
+
+Đường MACD (xanh) cắt lên trên đường tín hiệu (đỏ): Đây là tín hiệu cho thấy động lượng tăng đang mạnh lên.
+
+Tốt hơn nếu có phân kỳ tăng
+Giá: Tạo đáy sau thấp hơn đáy trước (Lower Low). Thêm trường hợp giá tạo đáy sau cao hơn đáy trước.
+
+MACD: Tạo đáy sau cao hơn đáy trước (Higher Low).Thêm trường hợp MACD tạo đáy sau thấp hơn đáy trước.
+
+Ý nghĩa: Phân kỳ tăng của MACD củng cố thêm tín hiệu đảo chiều tăng.
+
+Histogram MACD chuyển từ âm sang dương: Điều này xác nhận rằng động lượng tăng đang chiếm ưu thế.
+
+3. Engulfing:
+
+Xuất hiện mô hình nến Bullish Engulfing:
+
+Nến 1: Nến giảm (đỏ/đen).
+
+Nến 2: Nến tăng (xanh/trắng) có thân nến bao trùm hoàn toàn thân nến giảm trước đó.
+
+Ý nghĩa: Phe mua đã hoàn toàn áp đảo phe bán trong phiên giao dịch, cho thấy khả năng cao giá sẽ tiếp tục tăng.
+
+C. Điểm vào lệnh:
+
+Vào lệnh mua (Long) khi nến Engulfing đóng cửa.
+
+Có thể chờ thêm một nến xác nhận (nến tăng tiếp theo) sau nến Engulfing để an toàn hơn, nhưng cũng có thể bỏ lỡ cơ hội nếu giá tăng mạnh ngay sau đó. 
+Đặt stop-loss dưới đáy gần nhất của mô hình nến Engulfing.
+
+II. Logic vào lệnh Bán (Short):
+
+A. Điều kiện tiên quyết: Xác định xu hướng giảm bằng Stochastic
+
+Stochastic Oscillator:
+
+Cách xác định xu hướng giảm:
+
+Stochastic nằm chủ yếu dưới vùng 50: Điều này cho thấy phe bán đang kiểm soát thị trường nhiều hơn phe mua.
+
+Stochastic tạo đỉnh sau thấp hơn đỉnh trước (Lower Highs): Mỗi lần Stochastic tăng, nó tạo ra một đỉnh mới thấp hơn đỉnh trước đó. Đây là dấu hiệu của một xu hướng giảm đang diễn ra.
+
+Hình dung: Tương tự, hãy tưởng tượng Stochastic như một con sóng. Trong xu hướng giảm, con sóng này liên tục tạo ra những đợt sóng mới thấp hơn những đợt sóng trước.
+
+B. Tín hiệu vào lệnh:
+
+1. RSI (14):
+
+Giảm xuống dưới mức 70: Xác nhận rằng giá đã thoát khỏi vùng quá mua và phe bán đang bắt đầu tham gia.
+
+Tốt hơn nếu có phân kỳ giảm (không bắt buộc):
+
+Giá: Tạo đỉnh sau cao hơn đỉnh trước (Higher High).
+
+RSI: Tạo đỉnh sau thấp hơn đỉnh trước (Lower High).
+
+Ý nghĩa: Tương tự như phân kỳ giảm của Stochastic, phân kỳ giảm của RSI cũng cho thấy sự suy yếu của động lượng tăng và khả năng đảo chiều giảm.
+
+2. MACD (12, 26):
+
+Đường MACD (xanh) cắt xuống dưới đường tín hiệu (đỏ): Đây là tín hiệu cho thấy động lượng giảm đang mạnh lên.
+
+Tốt hơn nếu có phân kỳ giảm (không bắt buộc):
+
+Giá: Tạo đỉnh sau cao hơn đỉnh trước (Higher High).
+MACD: Tạo đỉnh sau thấp hơn đỉnh trước (Lower High).
+
+Ý nghĩa: Phân kỳ giảm của MACD củng cố thêm tín hiệu đảo chiều giảm.
+
+Histogram MACD chuyển từ dương sang âm: Điều này xác nhận rằng động lượng giảm đang chiếm ưu thế.
+
+3. Engulfing:
+
+Xuất hiện mô hình nến Bearish Engulfing:
+
+Nến 1: Nến tăng (xanh/trắng).
+
+Nến 2: Nến giảm (đỏ/đen) có thân nến bao trùm hoàn toàn thân nến tăng trước đó.
+
+Ý nghĩa: Phe bán đã hoàn toàn áp đảo phe mua trong phiên giao dịch, cho thấy khả năng cao giá sẽ tiếp tục giảm.
+
+C. Điểm vào lệnh: (dựa trên thang điểm 5/7)
+
+1. Khi đã xác định được đỉnh đáy từ Stoch ta sẽ ra được 1 range giao dịch (1đ)
+2. Từ range giao dịch sẽ đợi khi có tín hiệu từ:
+- Nến Engulfing (2đ)
+- RSI về mốc 30 (1đ)
+- RSI phân kỳ (1đ)
+- MACD 12 cắt lên 26 (1đ)
+- MACD phân kỳ (1đ)
+
+Ở trend giảm thì ngược lại:
+ Từ range giao dịch sẽ đợi khi có tín hiệu từ:
+- Nến Engulfing
+- RSI lên mốc 70
+- MACD 12 cắt xuống 26
+- MACD phân kỳ
+
+Vào lệnh bán (Short) khi nến Engulfing đóng cửa.
+Đặt stop-loss trên đỉnh gần nhất của mô hình nến Engulfing.
+phương pháp chốt lời sử dụng SMMA (5, 13) và vùng DMZ:
+
+1. Xác định vùng DMZ:
+
+Vùng DMZ (Demand/Supply Zones) là các vùng giá mà tại đó đã từng xảy ra sự mất cân bằng cung cầu mạnh mẽ trong quá khứ, dẫn đến sự đảo chiều giá.
+
+Trong hình của bạn, các vùng DMZ được đánh dấu bằng các hình chữ nhật màu xám.
+
+Vùng DMZ phía dưới biểu đồ giá đóng vai trò là vùng cầu (Demand Zone) - nơi tiềm năng có lực mua mạnh.
+
+Vùng DMZ phía trên biểu đồ giá đóng vai trò là vùng cung (Supply Zone) - nơi tiềm năng có lực bán mạnh.
+
+Bạn chia mỗi vùng DMZ thành 3 phần (tương ứng với 3 cột màu xanh lá cây trong hình).
+
+2. Sử dụng SMMA (5, 13):
+
+SMMA 5 (đường nhanh): Đường trung bình động mượt mà (Smoothed Moving Average) chu kỳ 5.
+
+SMMA 13 (đường chậm): Đường trung bình động mượt mà (Smoothed Moving Average) chu kỳ 13.
+
+Tín hiệu:
+
+SMMA 5 cắt lên trên SMMA 13: Tín hiệu tăng giá.
+
+SMMA 5 cắt xuống dưới SMMA 13: Tín hiệu giảm giá.
+
+3. Logic chốt lời cho lệnh Mua (Long):
+
+Bước 1: Xác định vùng Supply Zone (vùng cung) gần nhất phía trên giá hiện tại. Đây sẽ là khu vực tiềm năng để chốt lời.
+
+Bước 2: Quan sát đường SMMA (5, 13) khi giá tiếp cận vùng Supply Zone đã chia thành 3 phần:
+
+Mức 50% (Cột xanh lá cây đầu tiên): Khi đường SMMA 5 đi vào cột thứ nhất (tương ứng với mức 50% của vùng Supply Zone), chốt lời 50% khối lượng của lệnh mua.
+
+SMMA có dấu hiệu cắt nhau: Nếu SMMA 5 có dấu hiệu cắt xuống SMMA 13 trong vùng Supply Zone, cân nhắc chốt lời thêm một phần hoặc toàn bộ vị thế còn lại.
+
+Vượt ngưỡng cao nhất của DMZ (Cột xanh lá cây thứ hai): Nếu giá vượt qua cột thứ hai (vượt ngưỡng cao nhất của vùng Supply Zone), tiếp tục giữ vị thế còn lại và theo dõi chặt chẽ tín hiệu của thị trường (đặc biệt là sự giao cắt của SMMA và các dấu hiệu đảo chiều khác). Có thể dời stop-loss lên theo giá để bảo toàn lợi nhuận.
+
+Cột xanh lá cây thứ ba: Nếu giá tiếp tục tăng và chạm đến cột thứ ba (vùng ngoài cùng của Supply Zone), cân nhắc chốt lời toàn bộ vị thế vì đây là vùng có khả năng xảy ra áp lực bán mạnh.
+
+4. Logic chốt lời cho lệnh Bán (Short):
+
+Bước 1: Xác định vùng Demand Zone (vùng cầu) gần nhất phía dưới giá hiện tại. Đây sẽ là khu vực tiềm năng để chốt lời.
+
+Bước 2: Quan sát đường SMMA (5, 13) khi giá tiếp cận vùng Demand Zone đã chia thành 3 phần:
+Mức 50% (Cột xanh lá cây đầu tiên): Khi đường SMMA 5 đi vào cột thứ nhất (tương ứng với mức 50% của vùng Demand Zone), chốt lời 50% khối lượng của lệnh bán.
+
+SMMA có dấu hiệu cắt nhau: Nếu SMMA 5 có dấu hiệu cắt lên SMMA 13 trong vùng Demand Zone, cân nhắc chốt lời thêm một phần hoặc toàn bộ vị thế còn lại.
+
+Vượt ngưỡng thấp nhất của DMZ (Cột xanh lá cây thứ hai): Nếu giá vượt qua cột thứ hai (vượt ngưỡng thấp nhất của vùng Demand Zone), tiếp tục giữ vị thế còn lại và theo dõi chặt chẽ tín hiệu của thị trường (đặc biệt là sự giao cắt của SMMA và các dấu hiệu đảo chiều khác). Có thể dời stop-loss xuống theo giá để bảo toàn lợi nhuận.
+
+Cột xanh lá cây thứ ba: Nếu giá tiếp tục giảm và chạm đến cột thứ ba (vùng ngoài cùng của Demand Zone), cân nhắc chốt lời toàn bộ vị thế vì đây là vùng có khả năng xảy ra áp lực mua mạnh.
