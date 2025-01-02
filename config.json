@@ -7,7 +7,7 @@
   "tradable_balance_ratio": 0.99,
   "fiat_display_currency": "USD",
   "dry_run": true,  
-  "strategy": "RSI_MACD_Stoch_Engulfing_1",
+  "strategy": "RSI_Stoch_Engulfing_1",
   "timeframe": "30m",
   "plot_config": {
       "main_plot": {
