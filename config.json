@@ -1,158 +1,152 @@
 {
-    "trading_mode": "futures",
-    "margin_mode": "isolated",
-    "max_open_trades": 1,
-    "stoploss": -0.3,
-    "stake_currency": "USDT",
-    "stake_amount": 100,
-    "tradable_balance_ratio": 0.99,
-    "fiat_display_currency": "USD",
-    "dry_run": true,
-    "strategy": "engulfing_stoch_rsi",
-    "timeframe": "30m",
-    "plot_config": {
-        "main_plot": {
-            "smma_5": {
-                "color": "blue",
-                "type": "line"
-            },
-            "smma_13": {
-                "color": "orange",
-                "type": "line"
-            }
-        },
-        "subplots": {
-            "RSI": {
-                "RSI": {
-                    "color": "purple",
-                    "type": "line"
-                },
-                "70": {
-                    "color": "#ffe0e0",
-                    "type": "line",
-                    "plotly": {
-                        "linestyle": "dash"
-                    }
-                },
-                "30": {
-                    "color": "#ffe0e0",
-                    "type": "line",
-                    "plotly": {
-                        "linestyle": "dash"
-                    }
-                }
-            },
-            "MACD": {
-                "MACD": {
-                    "color": "blue",
-                    "type": "line"
-                },
-                "MACDSignal": {
-                    "color": "orange",
-                    "type": "line"
-                },
-                "histogram": {
-                    "color": "#26A69A",
-                    "type": "bar"
-                },
-                "0": {
-                    "color": "#ffe0e0",
-                    "type": "line",
-                    "plotly": {
-                        "linestyle": "dash"
-                    }
-                }
-            },
-            "Stoch": {
-                "%K": {
-                    "color": "blue",
-                    "type": "line"
-                },
-                "%D": {
-                    "color": "orange",
-                    "type": "line"
-                },
-                "80": {
-                    "color": "#ffe0e0",
-                    "type": "line",
-                    "plotly": {
-                        "linestyle": "dash"
-                    }
-                },
-                "20": {
-                    "color": "#ffe0e0",
-                    "type": "line",
-                    "plotly": {
-                        "linestyle": "dash"
-                    }
-                }
-            }
-            
-        }
-    },
-    "freqaimodel": null,
-    "dataformat_ohlcv": "json",
-    "dataformat_trades": "jsongz",
-    "cancel_open_orders_on_exit": false,
-    "dry_run_wallet": 1000,
-    "process_only_new_candles": true,
-    "liquidation_buffer": 0.01,
-    "unfilledtimeout": {
+  "trading_mode": "futures",
+  "margin_mode": "isolated",
+  "max_open_trades": 1,
+  "stake_currency": "USDT",
+  "stake_amount": 100,
+  "tradable_balance_ratio": 0.99,
+  "fiat_display_currency": "USD",
+  "dry_run": true,  
+  "strategy": "RSI_MACD_Stoch_Engulfing_1",
+  "timeframe": "30m",
+  "plot_config": {
+      "main_plot": {
+          "smma_5": {
+              "color": "blue",
+              "type": "line"
+          },
+          "smma_13": {
+              "color": "orange",
+              "type": "line"
+          }
+      },
+      "subplots": {
+          "RSI": {
+              "rsi": {
+                  "color": "purple",
+                  "type": "line"
+              },
+              "70": {
+                  "color": "#ffe0e0",
+                  "type": "line",
+                  "plotly": {
+                      "linestyle": "dash"
+                  }
+              },
+              "30": {
+                  "color": "#ffe0e0",
+                  "type": "line",
+                  "plotly": {
+                      "linestyle": "dash"
+                  }
+              }
+          },
+          "MACD": {
+              "macd": {
+                  "color": "blue",
+                  "type": "line"
+              },
+              "macdsignal": {
+                  "color": "orange",
+                  "type": "line"
+              }
+          },
+          "Stoch": {
+              "stoch_k": {
+                  "color": "blue",
+                  "type": "line"
+              },
+              "stoch_d": {
+                  "color": "orange",
+                  "type": "line"
+              },
+              "80": {
+                  "color": "#ffe0e0",
+                  "type": "line",
+                  "plotly": {
+                      "linestyle": "dash"
+                  }
+              },
+              "20": {
+                  "color": "#ffe0e0",
+                  "type": "line",
+                  "plotly": {
+                      "linestyle": "dash"
+                  }
+              }
+          }
+      }
+  },
+  "freqaimodel": null,
+  "dataformat_ohlcv": "json",
+  "dataformat_trades": "jsongz",
+  "cancel_open_orders_on_exit": false,
+  "dry_run_wallet": 1000,
+  "process_only_new_candles": true,
+  "liquidation_buffer": 0.02,
+  "unfilledtimeout": {
       "entry": 10,
       "exit": 10
-    },
-    "entry_pricing": {
+  },
+  "entry_pricing": {
       "price_side": "other",
       "use_order_book": true,
-      "order_book_top": 1,
+      "order_book_top": 3,
       "price_last_balance": 0.0,
       "check_depth_of_market": {
-        "enabled": false,
-        "bids_to_ask_delta": 1
+          "enabled": true,
+          "bids_to_ask_delta": 1
       }
-    },
-    "exit_pricing": {
+  },
+  "exit_pricing": {
       "price_side": "other",
       "use_order_book": true,
-      "order_book_top": 1
-    },
-    "exchange": {
+      "order_book_top": 3
+  },
+  "exchange": {
       "name": "binance",
       "sandbox": false,
       "key": "",
       "secret": "",
-      "markets_refresh_interval": 60,
+      "markets_refresh_interval": 30,
       "ccxt_config": {
-        "enableRateLimit": true,
-        "rateLimit": 100
+          "enableRateLimit": true,
+          "rateLimit": 100
       },
       "ccxt_async_config": {
-        "enableRateLimit": true,
-        "rateLimit": 100
+          "enableRateLimit": true,
+          "rateLimit": 100
       },
       "pair_whitelist": [
-        "BTC/USDT:USDT"
+          "BTC/USDT:USDT",
+          "ETH/USDT:USDT"
       ],
       "pair_blacklist": []
-    },
-    "pairlists": [
+  },
+  "pairlists": [
       {
-        "method": "StaticPairList"
+          "method": "StaticPairList"
       }
-    ],
-  
-    "api_server": {
-      "enabled": false,
+  ],
+  "api_server": {
+      "enabled": true,
       "listen_ip_address": "127.0.0.1",
       "listen_port": 8080,
-      "verbosity": "error",
-      "enable_openapi": false,
+      "verbosity": "info",
+      "enable_openapi": true,
       "jwt_secret_key": "somethingrandom",
       "CORS_origins": [
-        "http://localhost:3000"
+          "http://localhost:3000"
       ],
       "username": "freqtrader",
       "password": "SuperSecurePassword",
       "ws_token": "secret_ws_t0ken."
-    }
+  },
+  "strategy_config": {
+      "trailing_stop": {
+          "enabled": true,
+          "trailing_stop_positive": 0.10,
+          "trailing_stop_positive_offset": 0.15
+      }
   }
+}
