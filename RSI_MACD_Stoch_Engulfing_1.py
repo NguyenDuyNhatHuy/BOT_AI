@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import talib.abstract as ta
 
-class RSI_MACD_Stoch_Engulfing_1(IStrategy):
+class RSI_Stoch_Engulfing_1(IStrategy):
     """
     Ví dụ Strategy sử dụng Engulfing + phát hiện phân kỳ RSI, Stoch (phiên bản pivot).
     """
